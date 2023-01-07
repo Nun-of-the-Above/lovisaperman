@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.1.1",
+    "@types/react-image-gallery": "^1.2.0",
+    "@types/react-pdf": "^6.2.0",
+    "@vimeo/player": "^2.18.0",
+    "lightbox.js-react": "^0.2.9",
     "next": "^13.0.7",
+    "next-gallery": "^1.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-image-gallery": "^1.2.11",
+    "react-pdf": "^6.2.1",
+    "react-spring-lightbox": "^1.7.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",

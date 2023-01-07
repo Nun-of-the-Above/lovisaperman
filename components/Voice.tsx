@@ -1,22 +1,35 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import VoiceImage from "../public/voice.png";
 import { VoicePlayer } from "./VoicePlayer";
+import { audioMockData } from "./audioMockData";
+import { useState } from "react";
 
-export const Voice = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
+export const Voice = () => {
+  // TODO: Add cms support with sanity for the audio files
+  // TODO: Move all functionality into useAudio()
+
+  const [trackPlaying, setTrackPlaying] = useState<string>("");
+
   return (
-    <div className="absolute flex flex-col items-center border w-52 h-80 bottom-20 left-1/2">
-      <h2 className="top-0 text-2xl font-thin tracking-wider text-white ">
+    <div className="absolute flex flex-col bottom-2 left-1/2">
+      <h2 className="top-0 self-center mb-5 text-2xl font-thin tracking-wider text-white">
         RÖST
       </h2>
       <Image
-        src={"/voice.png"}
-        alt="Sketch of a throat."
-        width={160}
-        height={160}
-        className="right-0 w-40 bottom-"
+        src={VoiceImage}
+        alt="Anatomy sketch of a throat."
+        className="self-center"
       />
 
-      <VoicePlayer soundName="Test Audio" soundUrl="/testaudio.wav" />
+      {audioMockData.map((audio) => (
+        <VoicePlayer
+          key={audio.id}
+          {...audio}
+          pause={trackPlaying !== audio.id}
+          setTrackPlaying={setTrackPlaying}
+          trackPlaying={trackPlaying}
+        />
+      ))}
     </div>
   );
 };
