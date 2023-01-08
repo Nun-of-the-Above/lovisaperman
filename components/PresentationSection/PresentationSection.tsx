@@ -1,7 +1,6 @@
 import FloatingHead from "../../public/floating-head.png";
 import Image from "next/image";
 import OmMig from "../../public/omMig.svg";
-import OutlineFace from "../../public/outlineFace.png";
 import { PresentationText } from "./PresentationText";
 
 export const PresentationSection = () => (
@@ -9,7 +8,7 @@ export const PresentationSection = () => (
     <div className="flex flex-col justify-center ">
       <div className="flex flex-col justify-between sm:max-h-max">
         <Image
-          src={OutlineFace}
+          src={"/outlineFace.png"}
           alt="Outline of a face"
           width={200}
           height={200}

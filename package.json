@@ -21,7 +21,8 @@
     "react-dom": "^18.2.0",
     "react-image-gallery": "^1.2.11",
     "react-pdf": "^6.2.1",
-    "react-spring-lightbox": "^1.7.1"
+    "react-spring-lightbox": "^1.7.1",
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
