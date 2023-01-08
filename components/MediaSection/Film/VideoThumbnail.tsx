@@ -1,6 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
-
-import FilmFrame from "../../public/film-frame.svg";
+import FilmFrame from "../../../public/film-frame.svg";
 import { HandleVideoProps } from "./Film";
 import Image from "next/image";
 

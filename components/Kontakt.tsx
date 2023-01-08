@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import CVImage from "../public/CV.png";
 import Image from "next/image";
 import KontaktLabel from "../public/kontakt-label.png";
-import { useDisableScroll } from "./Film/useDisableScroll";
+import { useDisableScroll } from "./MediaSection/Film/useDisableScroll";
 
 export const Kontakt = () => {
   const [showOverlay, setShowOverlay] = useState<boolean>(false);
