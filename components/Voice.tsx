@@ -11,8 +11,8 @@ export const Voice = () => {
   const [trackPlaying, setTrackPlaying] = useState<string>("");
 
   return (
-    <div className="absolute flex flex-col bottom-2 left-1/2">
-      <h2 className="top-0 self-center mb-5 text-2xl font-thin tracking-wider text-white">
+    <div className="flex flex-col items-center w-fit">
+      <h2 className="mb-2 text-2xl font-thin tracking-wider text-white ">
         RÖST
       </h2>
       <Image

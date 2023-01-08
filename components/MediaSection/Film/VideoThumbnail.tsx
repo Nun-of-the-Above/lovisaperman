@@ -1,4 +1,4 @@
-import FilmFrame from "../../../public/film-frame.svg";
+import FilmFrame from "../../../public/film/film-frame.svg";
 import { HandleVideoProps } from "./Film";
 import Image from "next/image";
 
@@ -18,8 +18,7 @@ export const VideoThumbnail = ({
   if (!videoUrl || !thumbnailUrl) return <></>;
 
   return (
-    <div className="flex flex-col w-[273px] group">
-      <div className="" />
+    <div className="flex flex-col w-full">
       <div
         className="flex items-center justify-center hover:cursor-pointer"
         onClick={() => handleVideo({ videoUrl, visible: true })}
@@ -30,10 +29,12 @@ export const VideoThumbnail = ({
           width={273}
           height={146}
           alt="Thumbnail for video"
-          className="w-full aspect-video"
+          className=""
         />
       </div>
-      <h3 className="mt-1 font-thin text-white text-md">{videoTitle}</h3>
+      <h3 className="mt-1 text-sm font-thin text-white md:text-md">
+        {videoTitle}
+      </h3>
     </div>
   );
 };

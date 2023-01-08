@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export const LipsLine = () => (
-  <div className="absolute right-0 flex gap-3 -top-3">
+  <div className="flex items-center justify-center gap-3 overflow-hidden">
     <Lips />
     <Lips />
     <Lips />
@@ -14,5 +14,11 @@ export const LipsLine = () => (
 );
 
 const Lips = () => (
-  <Image src="/lips.png" alt="Lovisa's lips cut out" height={69} width={40.8} />
+  <Image
+    src="/lips.png"
+    alt="Lovisa's lips cut out"
+    height={69}
+    width={40.8}
+    className="flex-1"
+  />
 );

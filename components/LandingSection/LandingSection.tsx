@@ -1,27 +1,27 @@
+import BgPaper from "../../public/backgrounds/bg-paper.png";
 import Image from "next/image";
 import Title from "../../public/title.svg";
 import mainPortrait from "../../public/main-portrait.png";
-import section1 from "../../public/section-1.png";
 
 export const LandingSection = () => (
-  <div className="h-screen ">
+  <div className="relative h-screen max-h-section">
     <Image
-      src={section1}
-      alt="background-section-1"
-      className="absolute w-full h-screen pointer-events-none touch-none -z-10"
+      src={BgPaper}
+      alt="Background image of paper"
+      className="absolute w-full h-screen pointer-events-none max-h-section touch-none -z-10 "
     />
 
-    <div className="flex flex-col h-1/3 border-8 pt-[5vh] justify-end items-center">
-      <div className="max-w-[810px] w-full mt-10">
+    <div className="flex flex-col pt-[5vh] justify-end items-center">
+      <div className="max-w-[810px] w-full mt-10 px-5">
         <Title />
       </div>
     </div>
-    <div className="relative flex flex-col items-center justify-center w-full border-8 border-green-500 h-2/3 -bottom-10">
+    <div className="relative flex flex-col items-center justify-center w-full h-2/3 -bottom-10">
       <Image
         src={mainPortrait}
         alt="Main profile image"
         height={690}
-        className="absolute bottom-0 self-center pr-4 pointer-events-none pl-11"
+        className="absolute self-center pl-4 pr-4 pointer-events-none -bottom-5"
       />
     </div>
 

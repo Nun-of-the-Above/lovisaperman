@@ -14,8 +14,8 @@ const Home: NextPage = () => {
   return (
     <>
       <HeadPart />
-      <div className="flex flex-col items-center justify-center ">
-        <div className="relative w-full max-w-screen-2xl">
+      <div className="flex flex-col items-center justify-center overflow-hidden ">
+        <div className="w-full max-w-screen-2xl">
           <LandingSection />
           <PresentationSection />
           <MediaSection />

@@ -11,6 +11,12 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-titillium)", ...fontFamily.sans],
       },
+      maxHeight: {
+        section: "1100px",
+      },
+      height: {
+        section: "1100px",
+      },
       colors: {
         "wax-flower": {
           50: "#fef5f2",
@@ -25,25 +31,25 @@ module.exports = {
           900: "#82331a",
         },
       },
-      backgroundImage: {
-        "nature-light": "url('/section-1.png')",
-        "nature-dark": "url('/nature-dark.jpg')",
-        "section-1": "url('/section1.png')",
-      },
-
       aspectRatio: {
         "4/3": "4 / 3",
         paper: "1 / (2**1/2)",
       },
       animation: {
-        "spin-slow": "spin 3s linear infinite",
+        "spin-slow": "spin 4s ease-in-out infinite",
         "slow-bounce": "customBounce 6s linear infinite",
         "vibrate-slow": "vibrate 0.3s infinite",
+        "gentle-bounce": "gentleBounce 3s ease-in-out infinite",
       },
       keyframes: {
         wiggle: {
           "0%": { transform: "translate(0,0)" },
           "50%": { transform: "translate(0, 5px)" },
+          "100%": { transform: "translate(0,0)" },
+        },
+        gentleBounce: {
+          "0%": { transform: "translate(0,0)" },
+          "50%": { transform: "translate(0, -20%)" },
           "100%": { transform: "translate(0,0)" },
         },
         customBounce: {

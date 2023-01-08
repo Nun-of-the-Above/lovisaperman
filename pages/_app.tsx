@@ -12,8 +12,8 @@ const titillium = Titillium_Web({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${titillium.variable} font-sans`}>
-      <Component {...pageProps} />;
+    <main className={`${titillium.variable} font-sans w-screen`}>
+      <Component {...pageProps} />
     </main>
   );
 }

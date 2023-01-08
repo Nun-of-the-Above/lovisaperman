@@ -1,42 +1,58 @@
+import BgPaper from "../../public/backgrounds/bg-paper.png";
 import Image from "next/image";
 import { Kontakt } from "../../components/Kontakt";
-import section1 from "../../public/section-1.png";
 
 export const ContactSection = () => (
-  <div className="relative h-screen">
+  <div className="relative">
     <Image
-      src={section1}
-      alt="Background section 3"
-      className="absolute w-screen h-screen -z-10"
+      src={BgPaper}
+      alt="Background image of paper"
+      className="absolute h-full -z-10"
     />
-    <Image
-      src={"/Lovisa-barock.png"}
-      width={750}
-      height={604}
-      alt="Barock image with Lovisas head copy-pasted onto the image."
-      className="absolute -top-10 left-10"
-    />
-    <Kontakt />
-    <Image
-      src={"/kejsaren-sketched.png"}
-      width={230}
-      height={277}
-      alt="Outlined sketch of Lovisa from 'Kejsaren av Portugalien'"
-      className="absolute bottom-28 left-72"
-    />
-    <Image
-      src={"/portrait-sketched.png"}
-      width={160}
-      height={218}
-      alt="Outlined sketch of Lovisa from 'Kejsaren av Portugalien'"
-      className="absolute left-0 ml-10 bottom-24"
-    />
-    <Image
-      src={"/dogs-group-sketched.png"}
-      width={361}
-      height={494}
-      alt="Outlined sketch of Lovisa from 'Kejsaren av Portugalien'"
-      className="absolute right-0 ml-10 bottom-24"
-    />
+
+    <div className="flex flex-col items-center p-3">
+      <div className="relative">
+        <Image
+          src={"/Lovisa-face-barock.png"}
+          width={300}
+          height={300}
+          alt="Barock image with Lovisas head copy-pasted onto the image."
+          className="absolute left-[35.5%] w-[27%] top-[12%] animate-spin-slow"
+        />
+        <Image
+          src={"/barock-woman.png"}
+          width={300}
+          height={604}
+          alt="Barock image with Lovisas head copy-pasted onto the image."
+          className="w-full"
+        />
+      </div>
+      <Kontakt />
+      <div className="flex flex-col ">
+        <div className="flex items-center justify-between m-3">
+          <Image
+            src={"/portrait-sketched.png"}
+            width={160}
+            height={218}
+            alt="Outlined sketch of Lovisa from 'Kejsaren av Portugalien'"
+            className="w-1/2 "
+          />
+          <Image
+            src={"/kejsaren-sketched.png"}
+            width={230}
+            height={277}
+            alt="Outlined sketch of Lovisa from 'Kejsaren av Portugalien'"
+            className="w-1/2 "
+          />
+        </div>
+        <Image
+          src={"/dogs-group-sketched.png"}
+          width={361}
+          height={494}
+          alt="Outlined sketch of Lovisa from 'Kejsaren av Portugalien'"
+          className="hidden md:block "
+        />
+      </div>
+    </div>
   </div>
 );

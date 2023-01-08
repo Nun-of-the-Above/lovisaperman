@@ -1,5 +1,5 @@
-import { CoolLightbox } from "./LightBox";
-import ScenTitle from "../public/scen-title.svg";
+import { CoolLightbox } from "./CoolLightbox";
+import Image from "next/image";
 import { scenMockData } from "./scenMockData";
 import { useState } from "react";
 
@@ -9,10 +9,16 @@ export const Scen = () => {
   return (
     <>
       <div
-        className="absolute z-20 -top-40 left-[40%] hover:cursor-pointer hover:border-red-500 hover:stroke-lime-300 transition-all"
+        className="transition-all hover:cursor-pointer hover:border-red-500 hover:stroke-lime-300"
         onClick={() => setShowOverlay(true)}
       >
-        <ScenTitle />
+        <Image
+          src={"/scen-title.svg"}
+          alt="Bilder & Media"
+          width={300}
+          height={300}
+          className="w-full"
+        />
       </div>
       <CoolLightbox
         images={scenMockData}

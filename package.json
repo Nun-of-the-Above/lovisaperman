@@ -13,6 +13,7 @@
     "@types/react-image-gallery": "^1.2.0",
     "@types/react-pdf": "^6.2.0",
     "@vimeo/player": "^2.18.0",
+    "framer-motion": "^8.2.4",
     "lightbox.js-react": "^0.2.9",
     "next": "^13.0.7",
     "next-gallery": "^1.1.0",

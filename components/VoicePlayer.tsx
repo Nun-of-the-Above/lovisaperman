@@ -1,7 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 import Image from "next/image";
-import VoiceScribble from "../public/voice-scribble.svg";
 
 interface VoicePlayerProps {
   id: string;
@@ -11,8 +10,6 @@ interface VoicePlayerProps {
   setTrackPlaying: Dispatch<SetStateAction<string>>;
   trackPlaying: string;
 }
-
-// TODO: Make
 
 export const VoicePlayer = ({
   audioTitle,
@@ -52,25 +49,32 @@ export const VoicePlayer = ({
               setTrackPlaying(isPlaying ? "" : id);
             }}
           >
-            {/* TODO: Turn image into backgorund of button instead */}
+            {/* TODO: Turn image into background of button instead */}
             <Image
-              src={isPlaying ? "/pause-button.svg" : "/play-button.svg"}
+              src={
+                isPlaying ? "/audio/pause-button.svg" : "/audio/play-button.svg"
+              }
               alt={audioTitle}
               width={40}
               height={40}
-              className="min-w-[40px]"
+              className="min-w-[40px] pointer-events-none"
             />
           </button>
           <div className="flex flex-col">
-            <VoiceScribble
-              alt="Audio scribble"
+            <Image
+              src={"voice-scribble.svg"}
+              alt={audioTitle}
+              width={150}
+              height={40}
               className={`${
                 isPlaying
                   ? "transition-transform animate-[wiggle_1s_ease-in-out_infinite]"
                   : ""
-              }`}
+              } w-full`}
             />
-            <p className="text-white">{audioTitle}</p>
+            <h3 className="mt-1 text-xs font-thin text-white md:text-md">
+              {audioTitle}
+            </h3>
           </div>
         </div>
       )}

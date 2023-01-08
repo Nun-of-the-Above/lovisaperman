@@ -26,7 +26,7 @@ export const Film = () => {
 
   return (
     <>
-      <div className="absolute flex flex-col items-center max-h-screen gap-4 mb-20  top-[386px] right-[101px]">
+      <div className="relative flex flex-col items-center gap-4 md:-bottom-20 ">
         <h2 className="text-2xl font-thin tracking-wider text-white uppercase">
           Film
         </h2>
