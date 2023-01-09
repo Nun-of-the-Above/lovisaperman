@@ -15,11 +15,7 @@ export const Voice = () => {
       <h2 className="mb-2 text-2xl font-thin tracking-wider text-white ">
         RÖST
       </h2>
-      <Image
-        src={VoiceImage}
-        alt="Anatomy sketch of a throat."
-        className="self-center"
-      />
+      <Image src={VoiceImage} alt="Anatomy sketch of a throat." />
 
       {audioMockData.map((audio) => (
         <VoicePlayer

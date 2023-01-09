@@ -26,19 +26,21 @@ export const Film = () => {
 
   return (
     <>
-      <div className="relative flex flex-col items-center gap-4 md:-bottom-20 ">
-        <h2 className="text-2xl font-thin tracking-wider text-white uppercase">
-          Film
-        </h2>
-        {videoMockData.map(({ id, thumbnailUrl, videoUrl, videoTitle }) => (
-          <VideoThumbnail
-            key={id}
-            videoUrl={videoUrl}
-            handleVideo={handleVideo}
-            thumbnailUrl={thumbnailUrl}
-            videoTitle={videoTitle}
-          />
-        ))}
+      <div className="relative flex flex-col items-center w-1/2 gap-4 ">
+        <div className="relative flex flex-col items-center gap-4 md:-bottom-20 ">
+          <h2 className="text-2xl font-thin tracking-wider text-white uppercase">
+            Film
+          </h2>
+          {videoMockData.map(({ id, thumbnailUrl, videoUrl, videoTitle }) => (
+            <VideoThumbnail
+              key={id}
+              videoUrl={videoUrl}
+              handleVideo={handleVideo}
+              thumbnailUrl={thumbnailUrl}
+              videoTitle={videoTitle}
+            />
+          ))}
+        </div>
       </div>
 
       {showOverlay && videoUrlToShow && (

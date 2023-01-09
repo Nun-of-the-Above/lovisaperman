@@ -20,12 +20,12 @@ export const VideoThumbnail = ({
   return (
     <div className="flex flex-col w-full">
       <div
-        className="flex items-center justify-center hover:cursor-pointer"
+        className="flex items-center justify-center group hover:cursor-pointer"
         onClick={() => handleVideo({ videoUrl, visible: true })}
       >
-        <FilmFrame className="absolute invisible aspect-video group-hover:visible group-hover:animate-vibrate-slow " />
+        <FilmFrame className="absolute invisible aspect-video md:group-hover:visible group-hover:animate-vibrate-slow " />
         <Image
-          src={thumbnailUrl}
+          src={`/film/thumbnails/${thumbnailUrl}`}
           width={273}
           height={146}
           alt="Thumbnail for video"

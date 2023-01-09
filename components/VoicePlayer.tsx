@@ -39,7 +39,7 @@ export const VoicePlayer = ({
   }, [isPlaying, audio, id, trackPlaying]);
 
   return (
-    <div className="relative">
+    <div>
       {audio && (
         <div className="flex items-center gap-3 mt-4 ">
           <button

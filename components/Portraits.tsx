@@ -12,31 +12,31 @@ export const Portraits = () => {
   return (
     <div className="flex justify-center ">
       <div
-        className="relative -mt-10 group hover:md:cursor-pointer w-fit md:w-44 "
+        className="relative -mt-10 md:-mt-0 group hover:md:cursor-pointer w-fit md:w-96"
         onClick={() => setShowOverlay(true)}
       >
-        <h2 className="relative text-2xl font-thin text-white top-[20vw] -left-14">
+        <h2 className="relative text-2xl font-thin text-white top-[20vw] md:top-28 -left-14 md:-left-6">
           PORTRÄTT
         </h2>
         <div className="absolute w-[50%] bottom-[25%] rotate-[39deg] right-[5%] -z-10">
           <Image
             src={PortraitSmile}
             alt="Portrait of Lovisa smiling."
-            className="transition-all duration-300 animate-gentle-bounce group-hover:-translate-y-[10%]"
+            className="transition-all duration-300 animate-gentle-bounce md:animate-none group-hover:-translate-y-[10%]"
           />
         </div>
         <div className="absolute w-[50%] bottom-[17%] -left-[5%] rotate-[-55deg] -z-10">
           <Image
             src={PortraitSmile}
             alt="Portrait of Lovisa smiling."
-            className="transition-all duration-300 animate-gentle-bounce group-hover:-translate-y-[10%]"
+            className="transition-all duration-300 animate-gentle-bounce md:animate-none group-hover:-translate-y-[10%]"
           />
         </div>
         <div className="absolute w-[50%] rotate-[53deg]  bottom-[12%] -right-[10%] -z-10   ">
           <Image
             src={PortraitSmile}
             alt="Portrait of Lovisa smiling."
-            className="transition-transform duration-300 animate-gentle-bounce group-hover:-translate-y-[10%] "
+            className="transition-transform duration-300 animate-gentle-bounce md:animate-none group-hover:-translate-y-[10%] "
           />
         </div>
         <Image

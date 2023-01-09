@@ -13,7 +13,7 @@ export const PresentationText = () => (
         alt="Background"
         className="absolute h-full opacity-50 -z-10"
       />
-      <div className="pt-10 pr-4 font-sans pl-14 pb-28">
+      <div className="relative pt-10 pr-4 font-sans pl-14 pb-28">
         Jag heter Lovisa Perman. <br />
         <FloatingHeadBullet />
         Just nu läser jag skådespelarprogrammet på Högskolan för scen och musik
@@ -49,6 +49,17 @@ export const PresentationText = () => (
         <br />
         <br />
         <FloatingHeadBullet />
+        {/* <div className="relative overflow-visible align-bottom border border-green-500 ">
+          <div className="relative">
+            <Image
+              src="/hashtag.svg"
+              width={200}
+              height={60}
+              alt=""
+              className="absolute bottom-0 left-0 text-base align-bottom border-4 border-red-500 w-72 h-28"
+            />{" "}
+          </div>
+        </div> */}
         Våren 2022 spelar min klass Sånger vid randen av ett grått hav av Pipsa
         Lonka i regi av Peter Elmers med premiär 10e Mars på Andra Stället i
         Angered

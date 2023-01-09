@@ -13,7 +13,7 @@ interface Props {
 
 export const VideoOverlay = ({ videoUrl, setShowOverlay }: Props) => (
   <>
-    <div className="fixed top-0 z-40 flex items-center justify-center w-screen h-screen">
+    <div className="fixed top-0 z-40 flex items-center justify-center w-screen h-screen -left-0 md:w-full">
       <iframe
         src={videoUrl}
         className="z-50 w-full max-w-5xl aspect-video h-fit"

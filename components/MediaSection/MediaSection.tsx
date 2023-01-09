@@ -15,17 +15,17 @@ export const MediaSection = () => (
     />
     <div className="">
       <div className="flex flex-col items-start md:flex-row">
-        <div className="relative z-20 order-first pr-32 m-2 md:m-0 md:ml-10">
+        <div className="relative z-20 order-first pr-32 m-2 md:m-0 md:ml-10 md:w-3/5">
           <Image
             src={"/bilder-title.svg"}
             alt="Bilder & Media"
             width={300}
             height={300}
-            className="relative w-full -top-5"
+            className="relative md:w-[650px] -top-5"
           />
         </div>
-        <div className="order-3 md:order-none z-20 mx-3  md:-left-[4vw] md:-top-[10vw] shrink md:m-0 ">
-          <div className="h-auto -mt-12">
+        <div className="order-3 md:order-none z-20 mx-3 md:relative md:-left-[4vw] md:-mt-20 shrink md:m-0  ">
+          <div className="relative h-auto -mt-12 md:-left-32">
             <Scen />
           </div>
         </div>
@@ -39,17 +39,15 @@ export const MediaSection = () => (
           />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between mx-5 ">
-        <div className="mx-10 md:flex-[3]">
+      <div className="flex flex-col items-center justify-between mx-5 md:flex-row ">
+        <div className="mx-10 md:mr-0 md:w-1/3">
           <Portraits />
         </div>
-        <div className="flex justify-between gap-4 mt-4 md:m-0 md:block">
-          <div className="md:flex-[2] w-50% md:w-full flex flex-col items-center">
+        <div className="flex justify-between gap-4 mt-4 md:m-0 md:flex-row md:w-2/3 ">
+          <div className="flex flex-col items-center w-1/2 md:w-full">
             <Voice />
           </div>
-          <div className="relative md:flex-[3] w-50% md:w-full flex flex-col items-center gap-4 ">
-            <Film />
-          </div>
+          <Film />
         </div>
       </div>
     </div>

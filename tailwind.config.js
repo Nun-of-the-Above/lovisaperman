@@ -17,6 +17,9 @@ module.exports = {
       height: {
         section: "1100px",
       },
+      screens: {
+        desktop: "1400px",
+      },
       colors: {
         "wax-flower": {
           50: "#fef5f2",

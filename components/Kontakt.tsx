@@ -12,22 +12,26 @@ export const Kontakt = () => {
   const cvImage: ImagesListType = [
     {
       src: "/CV.png",
-      loading: "lazy",
+      loading: "eager",
       alt: "",
     },
   ];
 
   return (
     <>
-      <div className="flex flex-col items-center">
-        <Image src={KontaktLabel} alt="Kontakt" className="my-3" />
+      <div className="flex flex-col items-center ">
+        <Image
+          src={KontaktLabel}
+          alt="Kontakt"
+          className="my-3 md:w-[413px] md:pt-14 md:relative md:-left-24"
+        />
         <EmailAndWebsite />
         <Image
           src={"/cv-label.svg"}
           width={150}
           height={80}
-          alt="Kontakt"
-          className="mt-5 md:hover:cursor-pointer"
+          alt="CV button"
+          className="mt-5 md:w-52 md:self-start md:ml-5 md:hover:cursor-pointer "
           onClick={() => setShowOverlay(true)}
         />
       </div>
@@ -43,8 +47,8 @@ export const Kontakt = () => {
 };
 
 const EmailAndWebsite = () => (
-  <div className="flex gap-3 ">
-    <div className="flex flex-col items-end">
+  <div className="flex gap-3 md:-ml-20 md:text-lg ">
+    <div className="flex flex-col items-end ">
       <div>epost</div>
       <div>hemsida</div>
     </div>
