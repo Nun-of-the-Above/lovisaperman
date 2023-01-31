@@ -62,7 +62,15 @@ export const PresentationText = () => (
         </div> */}
         Våren 2022 spelar min klass Sånger vid randen av ett grått hav av Pipsa
         Lonka i regi av Peter Elmers med premiär 10e Mars på Andra Stället i
-        Angered
+        Angered.{" "}
+        <a
+          href="https://billetto.se/e/sanger-vid-randen-av-ett-gratt-hav-biljetter-779467"
+          target="_blank"
+          rel="noreferrer"
+          className="cursor-pointer hover:underline text-link-color"
+        >
+          Biljetter finns här.
+        </a>
         <br />
         Kom gärna och titta!
       </div>

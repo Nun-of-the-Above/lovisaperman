@@ -1,7 +1,15 @@
+import localFont from "@next/font/local";
+
 import "../styles/globals.css";
 
 import type { AppProps } from "next/app";
 import { Titillium_Web } from "@next/font/google";
+
+// Font files can be colocated inside of `pages`
+const kungFont = localFont({
+  src: "../public/kungfont-regular.otf",
+  variable: "--font-kung",
+});
 
 // If loading a variable font, you don't need to specify the font weight
 const titillium = Titillium_Web({
@@ -12,7 +20,9 @@ const titillium = Titillium_Web({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${titillium.variable} font-sans w-screen`}>
+    <main
+      className={`${titillium.variable} ${kungFont.variable} font-sans w-screen`}
+    >
       <Component {...pageProps} />
     </main>
   );

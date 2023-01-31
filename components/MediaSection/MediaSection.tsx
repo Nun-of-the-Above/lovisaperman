@@ -1,4 +1,4 @@
-import BgRed from "../../public/backgrounds/bg-red.png";
+import BgRed from "../../public/backgrounds/bg-red.webp";
 import { Film } from "./Film/Film";
 import Image from "next/image";
 import { Portraits } from "../../components/Portraits";
@@ -31,7 +31,7 @@ export const MediaSection = () => (
         </div>
         <div className="absolute w-[25vw] md:w-44  top-0 right-0 z-20 flex-shrink order-2 md:relative md:order-none justify-self-end w-fits">
           <Image
-            src={"/king-dog.svg"}
+            src={"/king-dog.webp"}
             width="100"
             height="100"
             alt="Sketched dog with a crown"

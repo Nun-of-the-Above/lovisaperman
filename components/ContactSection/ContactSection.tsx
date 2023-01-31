@@ -21,7 +21,7 @@ export const ContactSection = () => (
             className="absolute left-[35.5%] w-[27%] top-[12%] animate-spin-slow"
           />
           <Image
-            src={"/barock-woman.png"}
+            src={"/barock-woman.webp"}
             width={300}
             height={604}
             alt="Barock image with Lovisas head copy-pasted onto the image."

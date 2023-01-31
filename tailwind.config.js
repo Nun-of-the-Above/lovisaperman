@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        kung: ["var(--font-kung)"],
         sans: ["var(--font-titillium)", ...fontFamily.sans],
       },
       maxHeight: {
@@ -21,6 +22,7 @@ module.exports = {
         desktop: "1400px",
       },
       colors: {
+        "link-color": "#D1583D",
         "wax-flower": {
           50: "#fef5f2",
           100: "#ffe8e1",

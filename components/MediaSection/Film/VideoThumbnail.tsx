@@ -32,8 +32,9 @@ export const VideoThumbnail = ({
           className=""
         />
       </div>
-      <h3 className="mt-1 text-sm font-thin text-white md:text-md">
-        {videoTitle}
+      <h3 className="-mt-3 font-thin tracking-widest text-center text-white text-md font-kung md:text-md">
+        {videoTitle} {videoTitle === "Shortreel" && <br />}
+        {videoTitle === "Shortreel" && "(för dig som har brådis)"}
       </h3>
     </div>
   );

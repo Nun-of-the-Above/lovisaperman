@@ -4,7 +4,7 @@ export const videoMockData = [
     thumbnailUrl: "skarvar.png",
     videoUrl:
       "https://player.vimeo.com/video/748385895?h=31b493693c&title=0&byline=0&portrait=0",
-    videoTitle: "Shortreel (för dig som har brådis)",
+    videoTitle: `Shortreel`,
   },
   {
     id: 2,
@@ -15,16 +15,16 @@ export const videoMockData = [
   },
   {
     id: 3,
-    thumbnailUrl: "babes-roll-out.png",
+    thumbnailUrl: "babes-roll-out.jpeg",
     videoUrl:
       "https://player.vimeo.com/video/745139255?h=31b493693c&title=0&byline=0&portrait=0",
-    videoTitle: "Kortfilm - Babes Roll Out",
+    videoTitle: "Kortfilm",
   },
   {
     id: 4,
-    thumbnailUrl: "thats-what-friends.png",
+    thumbnailUrl: "thats-what-friends.webp",
     videoUrl:
       "https://player.vimeo.com/video/745140323?h=31b493693c&title=0&byline=0&portrait=0",
-    videoTitle: "Kortfilm - That's What Friends Are For",
+    videoTitle: "Kortfilm",
   },
 ];

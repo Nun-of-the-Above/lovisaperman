@@ -1,13 +1,14 @@
 import BgPaper from "../../public/backgrounds/bg-paper.png";
 import Image from "next/image";
 import Title from "../../public/title.svg";
-import mainPortrait from "../../public/main-portrait.png";
+import mainPortrait from "../../public/main-portrait.webp";
 
 export const LandingSection = () => (
   <div className="relative h-screen max-h-section">
     <Image
       src={BgPaper}
       alt="Background image of paper"
+      priority
       className="absolute w-full h-screen pointer-events-none max-h-section touch-none -z-10 "
     />
 
@@ -21,6 +22,7 @@ export const LandingSection = () => (
         src={mainPortrait}
         alt="Main profile image"
         height={690}
+        priority
         className="absolute self-center pl-4 pr-4 pointer-events-none -bottom-5"
       />
     </div>

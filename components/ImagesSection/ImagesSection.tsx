@@ -9,7 +9,7 @@ export const ImagesSection = () => (
     <div className="md:flex">
       <div className="relative flex w-fit p-[5vw] md:p-5 h-fit ">
         <Image
-          src={"/Lovisa-image-1.png"}
+          src={"/Lovisa-image-1.webp"}
           alt="Photo of Lovisa"
           width={685}
           height={456}
@@ -24,7 +24,7 @@ export const ImagesSection = () => (
         />
       </div>
       <Image
-        src={"/Lovisa-image-2.png"}
+        src={"/Lovisa-image-2.webp"}
         alt="Photo of Lovisa"
         width={586}
         height={586}
@@ -34,7 +34,7 @@ export const ImagesSection = () => (
     <div className="md:flex">
       <div className="relative m-3 md:w-fit md:h-fit">
         <Image
-          src={"/Lovisa-image-3.png"}
+          src={"/Lovisa-image-3.webp"}
           alt="Photo of Lovisa"
           width={703}
           height={502}
@@ -57,7 +57,7 @@ export const ImagesSection = () => (
       </div>
       <div className="relative flex items-end mx-5 mb-5 -mt-[15vw] md:w-1/3 md:bottom-0 md:right-0 md:mt-0  ">
         <Image
-          src={"/Lovisa-image-4.png"}
+          src={"/Lovisa-image-4.webp"}
           alt="Photo of Lovisa"
           width={235}
           height={344}
