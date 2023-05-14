@@ -4,7 +4,7 @@ import { LipsLine } from "../LipsLine";
 export const ImagesSection = () => (
   <div className="relative flex min-h-fit flex-col items-center  md:items-stretch">
     <div className="relative flex w-full flex-1">
-      <div className="relative -mt-14 h-fit w-1/2 p-[5vw] md:p-5">
+      <div className="relative mt-4 h-fit w-1/2 p-2 md:-mt-14 md:p-[5vw]">
         <Image
           src={"/Lovisa-image-1.webp"}
           alt="Photo of Lovisa"
@@ -29,7 +29,7 @@ export const ImagesSection = () => (
         className="absolute right-0 top-[2vw] z-30 mr-[3vw] mt-5 w-[45vw] max-w-2xl"
       />
     </div>
-    <div className="relative mt-[20vw] ml-14 mb-[8vw] sm:mt-0 md:h-fit md:w-[50vw]">
+    <div className="relative mt-[8vw] mr-20 mb-[8vw] sm:mt-0 md:ml-14 md:h-fit md:w-[50vw]">
       <Image
         src={"/Lovisa-image-3.webp"}
         alt="Photo of Lovisa"
@@ -56,7 +56,7 @@ export const ImagesSection = () => (
       alt="Photo of Lovisa"
       width={235}
       height={344}
-      className="absolute bottom-0 right-[22vw] w-[16vw]"
+      className="absolute bottom-28 right-0 w-[16vw] md:right-[22vw] md:bottom-0"
     />
     <Image
       src={"/dog-crown.png"}

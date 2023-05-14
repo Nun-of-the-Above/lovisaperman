@@ -9,21 +9,21 @@ export const LandingSection = () => (
       src={BgPaper}
       alt="Background image of paper"
       priority
-      className="absolute w-full h-screen pointer-events-none max-h-section touch-none -z-10 "
+      className="pointer-events-none absolute -z-10 h-screen max-h-section w-full touch-none"
     />
 
-    <div className="flex flex-col pt-[5vh] justify-end items-center">
-      <div className="max-w-[810px] w-full mt-10 px-5">
+    <div className="flex flex-col items-center justify-end pt-[5vh]">
+      <div className="mt-10 w-full max-w-[810px] px-5">
         <Title />
       </div>
     </div>
-    <div className="relative flex flex-col items-center justify-center w-full h-2/3 -bottom-10">
+    <div className="relative -bottom-10 flex h-2/3 w-full flex-col items-center justify-center">
       <Image
         src={mainPortrait}
         alt="Main profile image"
         height={690}
         priority
-        className="absolute self-center pl-4 pr-4 pointer-events-none -bottom-5"
+        className="pointer-events-none absolute -bottom-5 self-center pl-4 pr-4"
       />
     </div>
 
@@ -33,7 +33,7 @@ export const LandingSection = () => (
         alt="Brush"
         width={200}
         height={128}
-        className="z-10 object-fill h-32"
+        className="z-10 h-32 object-fill"
       />
     </div>
   </div>
