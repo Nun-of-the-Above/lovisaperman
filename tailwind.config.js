@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         kung: ["var(--font-kung)"],
+        moonlight: ["var(--font-moonlight)"],
         sans: ["var(--font-titillium)", ...fontFamily.sans],
       },
       maxHeight: {
@@ -23,6 +24,7 @@ module.exports = {
       },
       colors: {
         "link-color": "#D1583D",
+        lips: "#D6A1C7",
         "wax-flower": {
           50: "#fef5f2",
           100: "#ffe8e1",

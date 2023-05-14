@@ -1,13 +1,17 @@
+import { useEffect, useState } from "react";
+
 import { CoolLightbox } from "./CoolLightbox";
+import CvLines from "../public/cv-lines.png";
 import Image from "next/image";
 import { ImagesListType } from "react-spring-lightbox";
 import KontaktLabel from "../public/kontakt-label.png";
+import clsx from "clsx";
 import { useDisableScroll } from "./MediaSection/Film/useDisableScroll";
-import { useState } from "react";
 
 export const Kontakt = () => {
-  const [showOverlay, setShowOverlay] = useState<boolean>(false);
+  const [showOverlay, setShowOverlay] = useState(false);
   useDisableScroll(showOverlay);
+  const [showCVLines, setShowCVLines] = useState(false);
 
   const cvImage: ImagesListType = [
     {
@@ -16,6 +20,14 @@ export const Kontakt = () => {
       alt: "",
     },
   ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setShowCVLines((prev) => !prev);
+    }, 750);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <>
@@ -26,14 +38,30 @@ export const Kontakt = () => {
           className="my-3 md:w-[413px] md:pt-14 md:relative md:-left-24"
         />
         <EmailAndWebsite />
-        <Image
-          src={"/cv-label.svg"}
-          width={150}
-          height={80}
-          alt="CV button"
-          className="mt-5 md:w-52 md:self-start md:ml-5 md:hover:cursor-pointer "
+        <div
+          className={clsx(
+            "flex items-center ml-10 -mt-12 justify-center w-fit relative p-14 sm:hover:cursor-pointer"
+          )}
           onClick={() => setShowOverlay(true)}
-        />
+        >
+          <Image
+            src={CvLines}
+            width="300"
+            height="200"
+            alt=""
+            className={clsx(
+              "absolute w-full h-full",
+              showCVLines && "rotate-12"
+            )}
+          />
+          <Image
+            src={"/cv-label.png"}
+            width={150}
+            height={80}
+            alt="CV-länk"
+            className="p-8 mr-5 w-52 text-[10vw] font-moonlight tracking-widest"
+          />
+        </div>
       </div>
       <CoolLightbox
         images={cvImage}
@@ -47,12 +75,13 @@ export const Kontakt = () => {
 };
 
 const EmailAndWebsite = () => (
-  <div className="flex gap-3 md:-ml-20 md:text-lg ">
-    <div className="flex flex-col items-end ">
+  <div className="flex gap-3 md:-ml-10 md:text-xl">
+    <div className="flex flex-col items-end gap-5">
       <div>epost</div>
       <div>hemsida</div>
+      <div>CV</div>
     </div>
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-start gap-5">
       <a
         target="_blank"
         rel="noreferrer"

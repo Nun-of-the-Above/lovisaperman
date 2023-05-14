@@ -1,7 +1,5 @@
-import DiplomaLine from "../public/diploma-line.svg";
 import FloatingHead from "../../public/floating-head.png";
 import Image from "next/image";
-import RevetLogo from "../../public/revet-logo.svg";
 
 export const PresentationText = () => (
   <div className="flex items-center justify-center w-fit">
@@ -14,41 +12,55 @@ export const PresentationText = () => (
         className="absolute h-full opacity-50 -z-10"
       />
       <div className="relative pt-10 pr-4 font-sans pl-14 pb-28">
-        Jag heter Lovisa Perman. <br />
-        <FloatingHeadBullet />
-        Just nu läser jag skådespelarprogrammet på Högskolan för scen och musik
-        i Göteborg och tar examen i juni 2023.
+        <>
+          <FloatingHeadBullet />
+          Jag heter Lovisa Perman. <br />
+          Just nu läser jag skådespelarprogrammet på Högskolan för scen och
+          musik i Göteborg och tar examen i juni 2023.
+          <br />
+          <br />
+        </>
+        <>
+          <FloatingHeadBullet />
+          Jag trivs med att arbeta fysiskt, gärna genreöverskridande,
+          tvärkonstnärligt och gladeligen med sång och dans. Jag tycker om att
+          samskapa med teknik och rum, är förtjust i ensemblearbetet och att
+          laborera i publikmötet.
+          <br />
+          <br />
+        </>
+        <>
+          <FloatingHeadBullet /> Utöver skådespelarutbildningen har jag en
+          läkarexamen och en kandidatexamen i teatervetenskap från Sahlgrenska
+          akademin respektive Teaterhögskolan i Malmö.
+          <br /> Jag är också rätt vass på att sjunga och jag drömmer om att en
+          dag få spela Gavroche i Les Mis.
+          <br />
+        </>
         <br />
+        <>
+          <FloatingHeadBullet />
+          Sedan 2015 driver jag en frigrupp som heter
+          <Image
+            src="/revet-logo.svg"
+            width={60}
+            height={40}
+            alt="Revet scenkonsts logga"
+            className="inline w-10 mx-1 sm:w-16 md:mx-2"
+          />
+          scenkonst . För att kolla in våra produktioner finns hemsida{" "}
+          <a
+            className="underline hover:cursor-pointer"
+            target="_blank"
+            rel="noreferrer"
+            href={"https://revetscenkonst.se"}
+          >
+            här
+          </a>
+          .
+          <br />
+        </>
         <br />
-        <FloatingHeadBullet /> Utöver skådespelarutbildningen har jag en
-        läkarexamen och en kandidatexamen i teatervetenskap från Sahlgrenska
-        akademin respektive Teaterhögskolan i Malmö.
-        <br /> Jag är också rätt vass på att sjunga och jag drömmer om att en
-        dag få spela Gavroche i Les Mis.
-        <br />
-        <br />
-        <FloatingHeadBullet />
-        Sedan 2015 driver jag en frigrupp som heter
-        <Image
-          src="/revet-logo.svg"
-          width={60}
-          height={40}
-          alt="Revet scenkonsts logga"
-          className="inline w-10 mx-1 sm:w-16 md:mx-2"
-        />
-        scenkonst . För att kolla in våra produktioner finns hemsida{" "}
-        <a
-          className="underline hover:cursor-pointer"
-          target="_blank"
-          rel="noreferrer"
-          href={"https://revetscenkonst.se"}
-        >
-          här
-        </a>
-        .
-        <br />
-        <br />
-        <FloatingHeadBullet />
         {/* <div className="relative overflow-visible align-bottom border border-green-500 ">
           <div className="relative">
             <Image
@@ -60,19 +72,9 @@ export const PresentationText = () => (
             />{" "}
           </div>
         </div> */}
-        Våren 2022 spelar min klass Sånger vid randen av ett grått hav av Pipsa
-        Lonka i regi av Peter Elmers med premiär 10e Mars på Andra Stället i
-        Angered.{" "}
-        <a
-          href="https://billetto.se/e/sanger-vid-randen-av-ett-gratt-hav-biljetter-779467"
-          target="_blank"
-          rel="noreferrer"
-          className="cursor-pointer hover:underline text-link-color"
-        >
-          Biljetter finns här.
-        </a>
-        <br />
-        Kom gärna och titta!
+        {/* Våren 2023 spelade min klass Sånger vid randen av ett grått hav av Pipsa
+        Lonka i regi av Peter Elmers. Tack till alla som kom och tittade.
+        <br /> */}
       </div>
     </div>
   </div>

@@ -13,6 +13,7 @@
     "@types/react-image-gallery": "^1.2.0",
     "@types/react-pdf": "^6.2.0",
     "@vimeo/player": "^2.18.0",
+    "clsx": "^1.2.1",
     "framer-motion": "^8.2.4",
     "lightbox.js-react": "^0.2.9",
     "next": "^13.0.7",
@@ -22,6 +23,7 @@
     "react-image-gallery": "^1.2.11",
     "react-pdf": "^6.2.1",
     "react-spring-lightbox": "^1.7.1",
+    "react-svg": "^16.1.12",
     "sharp": "^0.31.3"
   },
   "devDependencies": {
@@ -33,6 +35,8 @@
     "eslint": "8.17.0",
     "eslint-config-next": "^13.0.7",
     "postcss": "^8.4.14",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
     "tailwindcss": "^3.1.2",
     "typescript": "4.7.3"
   }

@@ -2,6 +2,11 @@ import { ImagesListType } from "react-spring-lightbox";
 
 export const scenMockData: ImagesListType = [
   {
+    src: "/scen/svraegh.jpg",
+    loading: "eager",
+    alt: "Sånger vid randen av ett grått hav - Högskolan för scen och musik 2023",
+  },
+  {
     src: "/scen/dfbs.webp",
     loading: "eager",
     alt: "De försvunna barnens skog - Teater Halland 2022",
