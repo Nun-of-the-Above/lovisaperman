@@ -1,9 +1,9 @@
+import Image from "next/image";
+import PortraitSmileOutlined from "public/portrait-smile-outlined.webp";
+import PortraitSmile from "public/portrait-smile.webp";
 import { useRef, useState } from "react";
 
 import { CoolLightbox } from "./CoolLightbox";
-import Image from "next/image";
-import PortraitSmile from "public/portrait-smile.webp";
-import PortraitSmileOutlined from "public/portrait-smile-outlined.webp";
 import { imagesMockData } from "./imagesMockData";
 
 export const Portraits = () => {

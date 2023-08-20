@@ -1,5 +1,6 @@
-import Lightbox, { ImagesListType } from "react-spring-lightbox";
+import Image from "next/image";
 import React, { Dispatch, SetStateAction, useState } from "react";
+import Lightbox, { ImagesListType } from "react-spring-lightbox";
 
 interface Props {
   images: ImagesListType;
@@ -77,23 +78,51 @@ export const CoolLightbox = ({
       images={images}
       currentIndex={currentImageIndex}
       className="z-10 p-10 bg-black bg-opacity-70"
-      /* Add your own UI */
-      // renderHeader={() => (<CustomHeader />)}
-      renderFooter={() => <>{downloadButton ? <DownloadFooter /> : <></>}</>}
-      // renderPrevButton={() => <CustomArrowButton direction="left" />}
-      // renderNextButton={() => <CustomArrowButton direction="right" />}
+      renderFooter={() => (
+        <>
+          {downloadButton ? (
+            <DownloadFooter />
+          ) : (
+            <div className="text-center text-white font-thin font-sans text-lg">
+              {images.find((_, i) => i === currentImageIndex)?.alt}
+            </div>
+          )}
+        </>
+      )}
+      renderPrevButton={() => (
+        <button onClick={gotoPrevious} className="z-10 hidden md:block">
+          <Image
+            src="/icons/left-arrow.svg"
+            alt=""
+            width={100}
+            height={150}
+            className=""
+          />
+        </button>
+      )}
+      renderNextButton={() => (
+        <button onClick={gotoNext} className="z-10 hidden md:block">
+          {" "}
+          <Image
+            src="/icons/right-arrow.svg"
+            alt=""
+            width={100}
+            height={150}
+            className="hover:animate-"
+          />
+        </button>
+      )}
       // renderImageOverlay={() => <ImageOverlayComponent />}
 
       /* Handle closing */
       // onClose={handleClose}
       singleClickToZoom={singleClickZoom}
-
       /* react-spring config for open/close animation */
       // pageTransitionConfig={{
       //   from: { transform: "scale(0.75)", opacity: 0 },
       //   enter: { transform: "scale(1)", opacity: 1 },
       //   leave: { transform: "scale(0.75)", opacity: 0 },
-      //   config: { mass: 1, tension: 320, friction: 32 }
+      //   config: { mass: 1, tension: 320, friction: 32 },
       // }}
     />
   );
