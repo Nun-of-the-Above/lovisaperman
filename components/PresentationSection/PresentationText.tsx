@@ -1,5 +1,7 @@
-import FloatingHead from "../../public/floating-head.png";
 import Image from "next/image";
+import Link from "next/link";
+
+import FloatingHead from "../../public/floating-head.png";
 
 export const PresentationText = () => (
   <div className="flex items-center justify-center w-fit">
@@ -14,9 +16,7 @@ export const PresentationText = () => (
       <div className="relative pt-10 pr-4 font-sans pl-14 pb-28">
         <>
           <FloatingHeadBullet />
-          Jag heter Lovisa Perman. <br />
-          Just nu läser jag skådespelarprogrammet på Högskolan för scen och
-          musik i Göteborg och tar examen i juni 2023.
+          Jag heter Lovisa Perman, nyexaminerad skådespelare från Högskolan för scen och musik. I höst spelar jag i föreställningen <Link className="underline"  target='_blank' href="https://www.regionteatervast.se/forestallningar/vaerlden-sa-ja/">Världen sa ja</Link> av Huy Le Vo på Regionteater Väst.
           <br />
           <br />
         </>
